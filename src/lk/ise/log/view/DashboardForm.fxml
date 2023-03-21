@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="dashboardContext" prefHeight="519.0" prefWidth="824.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ise.log.control.DashboardFormController">
+   <children>
+      <Label layoutX="25.0" layoutY="34.0" prefHeight="25.0" prefWidth="91.0" text="Dashboard">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Separator layoutX="25.0" layoutY="70.0" prefHeight="0.0" prefWidth="569.0" />
+      <Label fx:id="txtDateAndTime" layoutX="641.0" layoutY="38.0" text="Date and time" />
+      <Button layoutX="756.0" layoutY="34.0" mnemonicParsing="false" onAction="#logoutOnAction" prefHeight="25.0" prefWidth="54.0" text="Logout" />
+      <Button layoutX="6.0" layoutY="193.0" mnemonicParsing="false" onAction="#openCustomerForm" prefHeight="126.0" prefWidth="141.0" text="Customer" />
+      <Button layoutX="157.0" layoutY="193.0" mnemonicParsing="false" onAction="#openItemForm" prefHeight="126.0" prefWidth="153.0" text="Item" />
+      <Button layoutX="318.0" layoutY="193.0" mnemonicParsing="false" onAction="#openNewOrderForm" prefHeight="126.0" prefWidth="153.0" text="New Order" />
+      <Button layoutX="481.0" layoutY="193.0" mnemonicParsing="false" onAction="#openOrderForm" prefHeight="126.0" prefWidth="153.0" text="Orders" />
+      <Button layoutX="657.0" layoutY="193.0" mnemonicParsing="false" onAction="#openIncomeForm" prefHeight="126.0" prefWidth="153.0" text="Income" />
+   </children>
+</AnchorPane>

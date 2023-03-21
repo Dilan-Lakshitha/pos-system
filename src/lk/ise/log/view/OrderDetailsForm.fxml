@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="352.0" prefWidth="531.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ise.log.control.OrderDetailsFormController">
+   <children>
+      <TextField fx:id="txtId" layoutX="25.0" layoutY="29.0" />
+      <TextField fx:id="txtName" layoutX="193.0" layoutY="29.0" />
+      <TextField fx:id="txtDate" layoutX="362.0" layoutY="29.0" />
+      <TableView fx:id="tblOrderDetails" layoutX="25.0" layoutY="77.0" prefHeight="200.0" prefWidth="486.0">
+        <columns>
+          <TableColumn fx:id="colItem" prefWidth="75.0" text="Item" />
+          <TableColumn fx:id="colDescription" prefWidth="147.0" text="Description" />
+            <TableColumn fx:id="colQty" prefWidth="78.0" text="Qty" />
+            <TableColumn fx:id="colUnitPrice" prefWidth="185.0" text="Unit Price" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtCost" layoutX="362.0" layoutY="305.0" />
+      <Label layoutX="25.0" layoutY="6.0" text="Order Id">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="193.0" layoutY="6.0" text="Customer Name">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="362.0" layoutY="6.0" text="Date">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="362.0" layoutY="288.0" text="Total Cost">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
