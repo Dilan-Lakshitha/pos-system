@@ -9,6 +9,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import lk.ise.log.dao.DataAccessCode;
+import lk.ise.log.dao.util.PasswordConfig;
 import lk.ise.log.entity.User;
 
 import java.io.IOException;
@@ -22,7 +23,7 @@ public class RegisterFormController {
 
     public void saveUser(ActionEvent actionEvent) {
         User u1=new User(
-                txtUsername.getText(),txtPassword.getText()
+                txtUsername.getText(),new PasswordConfig().encryptPassword(txtPassword.getText())
         );
         if(btn.getText().equals("Register")){
             try{
